@@ -1,0 +1,36 @@
+.steam-widgets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.widget-item {
+  flex: 1 1 200px;
+  max-width: 320px;
+  min-width: 150px;
+  transition: transform 0.2s ease;
+}
+
+.widget-item img {
+  width: 100%; 
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 768px) {
+  .widget-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  
+  .steam-widgets {
+    gap: 15px;
+    padding: 10px;
+  }
+}
